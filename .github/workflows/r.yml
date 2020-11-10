@@ -26,7 +26,6 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
-        run: |
-          install.packages(c("devtools", "testthat"))
+        run: install.packages(c("devtools", "testthat"))
       - name: Check
-        shell: Rscript -e "testthat::test_dir('tests')"
+        run: Rscript -e "testthat::test_dir('tests')"
