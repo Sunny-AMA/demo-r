@@ -5,6 +5,7 @@
 # 1. Change working directory
 # 2. Call: testthat::test_dir('tests') within RStudio or R
 
+
 increment <- function(value) {
   value + 1
 }
